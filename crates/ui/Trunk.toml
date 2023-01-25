@@ -2,8 +2,3 @@
 address = "127.0.0.1"
 port = 1420
 open = false
-
-[[hooks]]
-stage = "post_build"
-command = "sh"
-command_arguments = ["-c", "cargo run --bin prerender --features ssr -- --dist $TRUNK_STAGING_DIR"]

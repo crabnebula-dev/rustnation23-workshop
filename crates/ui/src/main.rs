@@ -7,11 +7,7 @@ pub enum Route {
     Home,
     #[not_found]
     #[at("/404")]
-    NotFound
-}
-
-impl Route {
-    pub const PRERENDER: &[Self] = &[Self::Home, Self::NotFound];
+    NotFound,
 }
 
 fn switch(routes: Route) -> Html {
@@ -22,10 +18,18 @@ fn switch(routes: Route) -> Html {
 }
 
 #[function_component]
-pub fn App() -> Html {
+fn App() -> Html {
     html! {
         <main>
-            <Switch<Route> render={switch} />
+            <BrowserRouter>
+                <Switch<Route> render={switch} />
+            </BrowserRouter>
         </main>
     }
+}
+
+fn main() {
+    wasm_logger::init(wasm_logger::Config::new(log::Level::Trace));
+
+    yew::Renderer::<App>::new().render();
 }
