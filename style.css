@@ -21,6 +21,48 @@ body {
   margin: 0;
 }
 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0f0f0f;
+  background-color: #ffffff;
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #396cd8;
+}
+
+input,
+button {
+  outline: none;
+}
+
 .content {
   display: grid;
   grid-template-columns: minmax(3rem, 5vw) minmax(150px, 25vw) 1fr;
@@ -59,12 +101,10 @@ aside {
   background-color: #eeeae7;
   overflow: scroll;
   border-right: 1px solid #e0e0e0;
-  margin-top: var(--title-bar-height);
 }
 
 .channels {
   padding: 0;
-  /* padding: 1vw .6rem; */
   margin: 0;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -117,7 +157,7 @@ aside {
 
 .channel-title {
   font-weight: bold;
-  padding: 1rem;
+  /* padding: 1rem; */
   padding-bottom: .3em;
   font-size: 1.3em;
 }
@@ -169,7 +209,6 @@ aside {
 main {
   background-color: #f7f6f4;
   overflow: scroll;
-  margin-top: var(--title-bar-height);
   padding: 1vw 3vw;
 }
 
@@ -206,17 +245,6 @@ article summary {
 
 article [hidden] {
   display: none !important;
-}
-
-article a {
-  background-color: transparent;
-  color: #0969da;
-  text-decoration: none;
-}
-
-article a:active,
-article a:hover {
-  outline-width: 0;
 }
 
 article abbr[title] {
