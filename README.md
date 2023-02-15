@@ -4,31 +4,32 @@ This is the code accompanying the Rust Nation 2023 hands-on workshop.
 
 ## Prerequisites
 
-1. Setup Tauri prerequisites for your OS: https://tauri.app/v1/guides/getting-started/prerequisites/
+1. Setup Tauri prerequisites for your OS (especially on Linux): 
+   https://tauri.app/v1/guides/getting-started/prerequisites/
 
 2. Install the wasm32 Rust target
 
-```
-rustup target install wasm32-unknown-unknown
-```
+    ```
+    rustup target install wasm32-unknown-unknown
+    ```
 
 3. Install the Tauri CLI
 
-```
-cargo install tauri-cli
-```
+    ```
+    cargo install tauri-cli
+    ```
 
 4. Install Trunk
 
-```
-cargo install trunk
-```
+    ```
+    cargo install trunk
+    ```
 
 5. Clone this repo
 
-```
-git clone https://github.com/crabnebula-dev/rustnation23-workshop
-```
+    ```
+    git clone https://github.com/crabnebula-dev/rustnation23-workshop
+    ```
 
 ## Structure
 
