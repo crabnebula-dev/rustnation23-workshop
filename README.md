@@ -37,3 +37,16 @@ This repo contains a handful or numbered snapshots (1 through 4) in the `./check
 
 There is also a `complete` checkpoint which is my take on the RSS-reader app shown at the beginning of the talk.
 
+## Getting Started
+
+You can run the checkpoint apps by navigating into their respective subfolders and running the command:
+
+```
+cargo tauri dev
+```
+
+To build production-ready bundles run
+
+```
+cargo tauri build
+```
