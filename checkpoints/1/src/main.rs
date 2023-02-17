@@ -1,3 +1,5 @@
+mod components;
+
 use yew::prelude::*;
 
 #[function_component]

@@ -35,8 +35,6 @@ This is the code accompanying the Rust Nation 2023 hands-on workshop.
 
 This repo contains a handful or numbered snapshots (1 through 4) in the `./checkpoints` subfolder that correspond to the numbered stages on the slides. You can check out any of these to time-travel or skip ahead. 
 
-There is also a `complete` checkpoint which is my take on the RSS-reader app shown at the beginning of the talk.
-
 ## Getting Started
 
 You can run the checkpoint apps by navigating into their respective subfolders and running the command:
